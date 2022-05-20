@@ -1,20 +1,12 @@
-def isUgly(N):
-    while N % 2 == 0:
-        N = N // 2
-    if N == 1:
-        return True
-    while N % 3 == 0:
-        N = N // 3
-    if N == 1:
-        return True
-    while N % 5 == 0:
-        N = N // 5
-    if N == 1:
-        return True
-    return False
-    
-n= int(input())
-if isUgly(n)==True:
+def isUgly(n):
+        if n == 0:
+            return False
+        for i in [2, 3, 5]:
+            while n % i == 0:
+                n /= i
+        return n == 1
+x=int(input())
+if isUgly(x)==1:
     print("Ugly Number")
 else:
     print("Not Ugly Number")
