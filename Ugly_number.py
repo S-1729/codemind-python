@@ -1,4 +1,4 @@
-def is_ugly(N):
+def isUgly(N):
     while N % 2 == 0:
         N = N // 2
     if N == 1:
@@ -12,10 +12,9 @@ def is_ugly(N):
     if N == 1:
         return True
     return False
-
-
-input_number = int(input())
-if is_ugly(input_number)==True:
+    
+n= int(input())
+if isUgly(n)==True:
     print("Ugly Number")
 else:
     print("Not Ugly Number")
