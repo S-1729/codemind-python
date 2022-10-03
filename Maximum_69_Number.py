@@ -1,9 +1,11 @@
 n=int(input())
 s=str(n)
-l=list(s)
-for i in range(len(s)):
-    if l[i]=='6':
-        l[i]='9'
-        break
-n=''.join(l)
-print(int(n))
+l=len(s)
+if '6' in s:
+    l=list(s)
+    ind=l.index('6')
+    l[ind]='9'
+    s="".join(l)
+    print(int(s))
+else:
+    print(n)
