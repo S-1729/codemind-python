@@ -1,0 +1,5 @@
+s=input()
+l=s.split()
+length=len(l)
+print(min(l[0]),end=" ")
+print(max(l[length-1]),end=" ")    
