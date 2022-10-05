@@ -1,2 +1,5 @@
 s=input()
-print(s[::-1])
+s=s.split()
+l=len(s)
+for i in range(len(s)):
+    print(s[l-1-i],end=" ")
