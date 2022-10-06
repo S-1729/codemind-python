@@ -1,5 +1,4 @@
 s=input()
 rev=''
-for i in s:
-    rev=i+rev
-print(rev)
+for i in range(len(s)-1,-1,-1):
+    print(s[i],end="")
