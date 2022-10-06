@@ -1,2 +1,5 @@
 s=input()
-print("".join(reversed(s)))
+rev=''
+for i in s:
+    rev=i+rev
+print(rev)
