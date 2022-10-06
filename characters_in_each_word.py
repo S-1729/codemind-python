@@ -1,5 +1,3 @@
 s=input()
-c=0
-l=s.split()
-for i in l:
+for i in s.split():
     print(len(i),end=" ")
