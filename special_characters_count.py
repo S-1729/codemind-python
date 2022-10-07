@@ -1,7 +1,9 @@
 s=input()
 c=0
 for i in s:
-    if(i.isalnum()==False):
-        if(i is not ' '):
+    if(ord(i)>=65 and ord(i)<=90) or (ord(i)>=97 and ord(i)<=122) or (ord(i)>=48 and ord(i)<=57):
+        continue
+    else:
+        if(i != ' '):
             c+=1
 print(c)
